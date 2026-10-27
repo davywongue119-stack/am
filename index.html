@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wongue Davy Cédric — Stagiaire Sales / Chargé d'affaires</title>
+<meta name="description" content="Candidature stage de 06 mois, Sales / Chargé d'affaires stagiaire dans un établissement de services financiers à Douala. Français et anglais courants, TOEFL, CAPM en préparation, connaissance des produits financiers.">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   Wongue Davy Cédric — Portfolio Stage Sales / Chargé d'Affaires
+   Version 10 : em-dashes retirés des textes
+   ============================================================ */
+
+:root{
+  --bg:       #FFFFFF;
+  --surface:  #F5F5F5;
+  --ink:      #0A0A0A;
+  --mut:      #6B6B6B;
+  --line:     #E8E8E8;
+  --accent:   #6B1B5A;
+
+  --font-sans: 'General Sans','Neue Haas Grotesk','Helvetica Neue',Arial,sans-serif;
+  --font-mono: 'IBM Plex Mono',ui-monospace,monospace;
+
+  --gutter:   clamp(20px, 5vw, 80px);
+  --max:      1320px;
+  --radius:   12px;
+  --ease:     cubic-bezier(.22,1,.36,1);
+  --header-h: 76px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px)}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-sans);
+  font-size:15px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+  padding-top:var(--header-h);
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;
+  background:var(--ink);color:#fff;padding:10px 16px;z-index:999;
+}
+.skip-link:focus{left:16px;top:16px}
+
+/* ============ HEADER FIXE ============ */
+.header{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;
+  width:100%;
+  padding:18px var(--gutter);
+  background:#FFFFFF;
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(0,0,0,.02);
+}
+.logo{font-weight:600;font-size:20px;letter-spacing:-.04em;flex-shrink:0}
+.logo span{color:var(--accent)}
+.nav{display:flex;gap:24px;font-size:13px;color:var(--mut)}
+.nav a{transition:color .25s var(--ease)}
+.nav a:hover{color:var(--ink)}
+.nav a:focus-visible{outline:2px solid var(--ink);outline-offset:4px;border-radius:2px}
+.header__right{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.lang-toggle{
+  display:inline-flex;align-items:center;
+  border:1px solid var(--line);border-radius:999px;
+  overflow:hidden;
+}
+.lang-toggle button{
+  font-family:var(--font-mono);
+  font-size:11px;font-weight:500;letter-spacing:.08em;
+  padding:8px 12px;color:var(--mut);
+  transition:background .2s var(--ease),color .2s var(--ease);
+}
+.lang-toggle button[aria-pressed="true"]{
+  background:var(--ink);color:#fff;
+}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--ink);color:#fff;
+  padding:11px 20px;border-radius:999px;
+  font-size:13px;font-weight:500;letter-spacing:-.01em;
+  transition:transform .25s var(--ease), background .25s var(--ease);
+}
+.pill:hover{background:#2a2a2a;transform:translateY(-1px)}
+@media(max-width:1024px){
+  .nav{
+    display:flex;gap:14px;font-size:12px;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .nav::-webkit-scrollbar{display:none}
+}
+@media(max-width:640px){
+  .header{flex-wrap:wrap;gap:12px;padding:14px var(--gutter)}
+  .nav{
+    order:3;width:100%;
+    border-top:1px solid var(--line);
+    padding-top:10px;
+  }
+  .header__right .pill{display:none}
+}
+
+/* ============ SECTIONS ============ */
+.section{
+  max-width:var(--max);margin:0 auto;
+  padding:clamp(90px,12vw,160px) var(--gutter);
+  scroll-margin-top:calc(var(--header-h) + 16px);
+}
+.section--center{text-align:center}
+.section__head{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  align-items:end;margin-bottom:56px;
+}
+.section__title{
+  font-size:clamp(38px,5vw,64px);
+  font-weight:500;letter-spacing:-.045em;line-height:1;
+}
+.section__title--xl{
+  font-size:clamp(48px,7.5vw,108px);
+  letter-spacing:-.055em;line-height:.95;margin-bottom:24px;
+}
+.section__intro{font-size:15px;color:var(--mut);max-width:44ch;line-height:1.6}
+.section__intro--center{margin:0 auto 56px;max-width:50ch}
+@media(max-width:820px){
+  .section__head{grid-template-columns:1fr;gap:24px;align-items:start}
+}
+
+/* ============ HERO ============ */
+.hero{
+  max-width:var(--max);margin:0 auto;
+  padding:clamp(40px,6vw,80px) var(--gutter) clamp(80px,10vw,120px);
+}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--mut);font-weight:500;
+  margin-bottom:48px;padding-bottom:20px;
+  border-bottom:1px solid var(--line);
+}
+.hero__grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:start;
+}
+.hero__title{
+  font-size:clamp(48px,7.8vw,116px);
+  font-weight:500;letter-spacing:-.055em;line-height:.9;
+  margin-bottom:32px;
+}
+.hero__title em{font-style:normal;color:var(--accent)}
+.hero__photo{
+  width:clamp(160px,22vw,220px);aspect-ratio:1;
+  border-radius:50%;overflow:hidden;background:var(--surface);
+}
+.hero__photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  filter:grayscale(.05);
+}
+.hero__intro{
+  font-size:clamp(15px,1.4vw,17px);line-height:1.6;
+  color:var(--ink);padding-top:clamp(20px,4vw,60px);
+}
+.hero__intro p{margin-bottom:20px;max-width:42ch}
+.link{
+  display:inline-block;font-size:14px;font-weight:500;
+  border-bottom:1px solid var(--ink);padding-bottom:2px;
+  transition:color .25s var(--ease),border-color .25s var(--ease);
+}
+.link:hover{color:var(--accent);border-color:var(--accent)}
+@media(max-width:820px){
+  .hero__grid{grid-template-columns:1fr;gap:40px}
+  .hero__intro{padding-top:0}
+}
+
+/* ============ LANGUES ============ */
+.langs{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;
+  margin-top:28px;
+}
+.lang{
+  background:var(--surface);border-radius:var(--radius);
+  padding:20px 22px;
+  display:flex;flex-direction:column;gap:6px;
+}
+.lang__k{
+  font-family:var(--font-mono);font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--mut);
+}
+.lang__v{
+  font-size:17px;font-weight:500;letter-spacing:-.015em;
+  display:flex;align-items:center;gap:8px;
+}
+.lang__v::before{
+  content:'';width:6px;height:6px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
+}
+@media(max-width:520px){.langs{grid-template-columns:1fr}}
+
+/* ============ STATS ============ */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  margin-top:clamp(80px,10vw,140px);
+  padding-top:40px;border-top:1px solid var(--line);
+}
+.stat__num{
+  font-size:clamp(38px,4.5vw,56px);
+  font-weight:500;letter-spacing:-.05em;line-height:1;margin-bottom:10px;
+}
+.stat__num span{font-size:.55em;font-weight:500}
+.stat__label{font-size:12.5px;color:var(--mut)}
+@media(max-width:700px){
+  .stats{grid-template-columns:repeat(2,1fr);gap:32px}
+}
+
+/* ============ SOMMAIRE ============ */
+.toc{
+  margin-top:48px;
+  border-top:1px solid var(--line);
+  padding-top:24px;
+}
+.toc__title{
+  font-family:var(--font-mono);font-size:10.5px;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--mut);margin-bottom:16px;
+}
+.toc__list{
+  display:flex;flex-wrap:wrap;gap:8px 12px;list-style:none;
+}
+.toc__list a{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--ink);
+  padding:8px 14px;border:1px solid var(--line);
+  border-radius:999px;
+  transition:background .2s var(--ease),border-color .2s var(--ease);
+}
+.toc__list a:hover,
+.toc__list a:focus-visible{
+  background:var(--surface);border-color:var(--ink);
+}
+.toc__list a span{
+  font-family:var(--font-mono);font-size:10px;
+  color:var(--accent);letter-spacing:.05em;
+}
+
+/* ============ EXPERTISE PRODUITS ============ */
+.expertise{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+}
+.expertise__block{
+  background:var(--surface);border-radius:var(--radius);
+  padding:40px 36px;
+  transition:transform .35s var(--ease),background .35s var(--ease);
+}
+.expertise__block:hover{transform:translateY(-4px);background:#F0F0F0}
+.expertise__cat{
+  font-family:var(--font-mono);font-size:10.5px;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);font-weight:500;
+  margin-bottom:16px;
+}
+.expertise__title{
+  font-size:24px;font-weight:500;letter-spacing:-.025em;
+  line-height:1.2;margin-bottom:20px;
+}
+.expertise__list{list-style:none}
+.expertise__list li{
+  font-size:14px;padding:10px 0 10px 22px;
+  position:relative;color:var(--ink);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.expertise__list li:last-child{border-bottom:none}
+.expertise__list li::before{
+  content:'✓';position:absolute;left:0;top:9px;
+  color:var(--accent);font-size:12px;font-weight:600;
+}
+.expertise__list li b{font-weight:500}
+.expertise__list li span{
+  display:block;font-size:12.5px;color:var(--mut);
+  margin-top:2px;
+}
+@media(max-width:820px){.expertise{grid-template-columns:1fr}}
+
+/* ============ POURQUOI UN STAGE ============ */
+.why-stage{
+  background:var(--ink);color:#fff;
+  max-width:var(--max);margin:0 auto;
+  border-radius:var(--radius);
+  padding:clamp(60px,7vw,100px) clamp(32px,5vw,80px);
+  margin-left:var(--gutter);margin-right:var(--gutter);
+  scroll-margin-top:calc(var(--header-h) + 16px);
+}
+.why-stage__head{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  align-items:end;margin-bottom:56px;
+}
+.why-stage__title{
+  font-size:clamp(38px,5vw,64px);
+  font-weight:500;letter-spacing:-.045em;line-height:1;
+}
+.why-stage__intro{
+  font-size:15px;color:rgba(255,255,255,.65);
+  max-width:44ch;line-height:1.6;
+}
+.why-stage__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+}
+.why-stage__item{
+  display:flex;flex-direction:column;
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.15);
+}
+.why-stage__num{
+  font-family:var(--font-mono);font-size:11px;
+  color:#fff;letter-spacing:.1em;
+  margin-bottom:16px;opacity:.7;
+}
+.why-stage__stat{
+  font-size:clamp(28px,3.5vw,42px);
+  font-weight:500;letter-spacing:-.04em;line-height:1;
+  margin-bottom:12px;
+}
+.why-stage__item-title{
+  font-size:17px;font-weight:500;letter-spacing:-.015em;
+  margin-bottom:10px;line-height:1.3;
+}
+.why-stage__text{
+  font-size:13.5px;color:rgba(255,255,255,.65);line-height:1.6;
+}
+@media(max-width:820px){
+  .why-stage__head{grid-template-columns:1fr;gap:20px;align-items:start}
+  .why-stage__grid{grid-template-columns:1fr;gap:24px}
+}
+
+/* ============ RELATIONNEL ============ */
+.relational{
+  background:var(--surface);
+  max-width:var(--max);margin:0 auto;
+  border-radius:var(--radius);
+  padding:clamp(60px,7vw,100px) clamp(32px,5vw,80px);
+  margin-left:var(--gutter);margin-right:var(--gutter);
+  scroll-margin-top:calc(var(--header-h) + 16px);
+}
+.relational__head{
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;
+  align-items:end;margin-bottom:56px;
+}
+.relational__title{
+  font-size:clamp(38px,5vw,64px);
+  font-weight:500;letter-spacing:-.045em;line-height:1;
+}
+.relational__intro{
+  font-size:15px;color:var(--mut);
+  max-width:44ch;line-height:1.6;
+}
+.relational__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:32px;
+}
+.rel{
+  display:flex;flex-direction:column;
+  padding-top:24px;border-top:1px solid rgba(0,0,0,.1);
+}
+.rel__num{
+  font-family:var(--font-mono);font-size:11px;
+  color:var(--accent);letter-spacing:.1em;
+  margin-bottom:16px;
+}
+.rel__title{
+  font-size:20px;font-weight:500;letter-spacing:-.02em;
+  margin-bottom:12px;line-height:1.2;
+}
+.rel__text{
+  font-size:13.5px;color:var(--mut);line-height:1.6;
+}
+.rel__tag{
+  margin-top:20px;font-family:var(--font-mono);
+  font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);
+}
+@media(max-width:820px){
+  .relational__head{grid-template-columns:1fr;gap:20px;align-items:start}
+  .relational__grid{grid-template-columns:1fr;gap:24px}
+}
+
+/* ============ CE QUE JE CHERCHE ============ */
+.search{
+  display:grid;grid-template-columns:1fr 1fr;gap:20px;
+}
+.search__block{
+  background:var(--surface);border-radius:var(--radius);
+  padding:40px 36px;
+  transition:transform .35s var(--ease),background .35s var(--ease);
+}
+.search__block:hover{transform:translateY(-4px);background:#F0F0F0}
+.search__block--accent{
+  background:var(--ink);color:#fff;
+}
+.search__block--accent:hover{background:#1a1a1a}
+.search__cat{
+  font-family:var(--font-mono);font-size:10.5px;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);font-weight:500;
+  margin-bottom:16px;
+}
+.search__block--accent .search__cat{color:#fff;opacity:.7}
+.search__title{
+  font-size:26px;font-weight:500;letter-spacing:-.025em;
+  line-height:1.15;margin-bottom:8px;
+}
+.search__poste{
+  font-family:var(--font-mono);font-size:11.5px;
+  letter-spacing:.05em;text-transform:uppercase;
+  color:var(--mut);
+  margin-bottom:24px;padding-bottom:20px;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+.search__block--accent .search__poste{
+  color:rgba(255,255,255,.55);
+  border-color:rgba(255,255,255,.15);
+}
+.search__list{list-style:none;margin-bottom:24px}
+.search__list li{
+  font-size:14px;padding:8px 0 8px 20px;
+  position:relative;color:var(--ink);
+}
+.search__list li::before{content:'·';position:absolute;left:4px;color:var(--accent);font-weight:700}
+.search__block--accent .search__list li{color:#fff}
+.search__block--accent .search__list li::before{color:#fff;opacity:.5}
+.search__why{
+  font-size:13px;color:var(--mut);line-height:1.6;
+  margin-top:auto;padding-top:20px;
+  border-top:1px solid rgba(0,0,0,.08);
+}
+.search__why b{color:var(--ink);font-weight:500}
+.search__block--accent .search__why{
+  color:rgba(255,255,255,.7);
+  border-color:rgba(255,255,255,.15);
+}
+.search__block--accent .search__why b{color:#fff}
+@media(max-width:820px){.search{grid-template-columns:1fr}}
+
+/* ============ EXPERIENCE ============ */
+.xp{list-style:none;text-align:left;max-width:1000px;margin:0 auto}
+.xp__row{
+  display:grid;grid-template-columns:36px 1.2fr 1.4fr auto;
+  align-items:center;gap:24px;
+  padding:22px 8px;border-bottom:1px solid var(--line);
+  font-size:15px;
+  transition:background .25s var(--ease),padding .25s var(--ease);
+}
+.xp__row:hover{background:#FAFAFA;padding-left:16px}
+.xp__row:first-child{border-top:1px solid var(--line)}
+.xp__mark{color:var(--accent);font-size:12px}
+.xp__company{font-weight:500;letter-spacing:-.01em}
+.xp__role{color:var(--mut);font-size:14px}
+.xp__date{font-family:var(--font-mono);font-size:12px;color:var(--mut)}
+@media(max-width:700px){
+  .xp__row{grid-template-columns:1fr;gap:6px;padding:20px 4px}
+  .xp__mark{display:none}
+  .xp__date{font-size:11px;margin-top:4px}
+}
+
+/* ============ STACK ============ */
+.stack{list-style:none}
+.stack li{
+  display:grid;grid-template-columns:220px 1fr;gap:24px;
+  padding:18px 0;border-bottom:1px solid var(--line);
+  align-items:baseline;
+}
+.stack li:first-child{border-top:1px solid var(--line)}
+.stack__k{font-weight:500;font-size:15px}
+.stack__v{color:var(--mut);font-size:14px}
+.stack__v b{color:var(--ink);font-weight:500}
+@media(max-width:600px){
+  .stack li{grid-template-columns:1fr;gap:4px;padding:16px 0}
+}
+
+/* ============ CERTIFICATS ============ */
+.cert-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+  text-align:left;
+}
+.cert-card{
+  background:var(--surface);border-radius:var(--radius);overflow:hidden;
+  cursor:pointer;transition:transform .35s var(--ease);
+  display:flex;flex-direction:column;
+}
+.cert-card:hover{transform:translateY(-4px)}
+.cert-card--prep{cursor:default}
+.cert-card--prep:hover{transform:none}
+.cert-thumb{
+  aspect-ratio:4/3;background:#EFEFEF;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;position:relative;
+}
+.cert-thumb img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;
+  transition:transform .5s var(--ease);
+}
+.cert-card:hover .cert-thumb img{transform:scale(1.04)}
+.cert-card--prep:hover .cert-thumb img{transform:none}
+.cert-thumb .soon,
+.cert-thumb .prep{
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:20px;text-align:center;color:var(--mut);
+}
+.cert-thumb .soon svg,
+.cert-thumb .prep svg{width:22px;height:22px;opacity:.5}
+.cert-thumb .soon b,
+.cert-thumb .prep b{font-size:12px;font-weight:500;line-height:1.3;color:var(--ink)}
+.cert-thumb .soon small,
+.cert-thumb .prep small{
+  font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--mut);
+}
+.cert-thumb .prep small{color:var(--accent)}
+.cert-info{padding:16px 18px 20px}
+.cert-info .t{
+  font-size:13px;font-weight:500;line-height:1.35;letter-spacing:-.005em;
+}
+@media(max-width:900px){.cert-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.cert-grid{grid-template-columns:1fr}}
+
+/* ============ CONTACT ============ */
+.contact{padding-bottom:clamp(120px,15vw,200px)}
+.contact__grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
+}
+.contact__links{display:flex;flex-direction:column;gap:0;max-width:440px;width:100%}
+.field{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0;border-bottom:1px solid var(--line);
+  font-size:15px;
+  transition:color .25s var(--ease),padding .25s var(--ease);
+}
+.field:first-child{border-top:1px solid var(--line)}
+.field:hover{color:var(--accent);padding-left:8px}
+.field span:first-child{color:var(--mut);font-size:13px}
+.field__v{font-weight:500}
+@media(max-width:820px){.contact__grid{grid-template-columns:1fr;gap:40px}}
+
+/* ============ FOOTER ============ */
+.footer{
+  max-width:var(--max);margin:0 auto;
+  padding:32px var(--gutter);
+  display:flex;justify-content:space-between;align-items:center;gap:24px;
+  border-top:1px solid var(--line);
+  font-family:var(--font-mono);
+  font-size:11px;letter-spacing:.05em;color:var(--mut);
+  flex-wrap:wrap;
+}
+.footer nav{display:flex;gap:24px;flex-wrap:wrap}
+.footer nav a:hover{color:var(--ink)}
+@media(max-width:600px){
+  .footer{flex-direction:column;align-items:flex-start;gap:16px}
+}
+
+/* ============ LIGHTBOX ============ */
+.lb{
+  position:fixed;inset:0;z-index:2000;
+  background:rgba(10,10,10,.94);
+  display:none;align-items:center;justify-content:center;
+  padding:32px;
+}
+.lb.open{display:flex}
+.lb__content img,
+.lb__content iframe{
+  max-width:92vw;max-height:82vh;background:#fff;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+  border-radius:6px;
+}
+.lb__content iframe{width:min(900px,92vw);height:82vh}
+.lb__close{
+  position:absolute;top:24px;right:24px;
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(255,255,255,.1);color:#fff;
+  font-size:20px;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .25s var(--ease);
+}
+.lb__close:hover{background:rgba(255,255,255,.25)}
+.lb__cap{
+  position:absolute;bottom:24px;left:0;right:0;text-align:center;
+  color:#fff;font-size:12px;opacity:.7;padding:0 24px;
+}
+
+/* ============ REVEAL ============ */
+.rv{
+  opacity:0;transform:translateY(20px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease);
+}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    transition-duration:.01ms !important;
+  }
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-fr="Aller au contenu" data-en="Skip to content">Aller au contenu</a>
+
+<!-- ========= HEADER FIXE ========= -->
+<header class="header">
+  <a href="#" class="logo" aria-label="Accueil">Wongue<span>.</span></a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#expertise" data-fr="Expertise" data-en="Expertise">Expertise</a>
+    <a href="#stage" data-fr="Stage" data-en="Internship">Stage</a>
+    <a href="#relationnel" data-fr="Relationnel" data-en="Interpersonal">Relationnel</a>
+    <a href="#cibles" data-fr="Cibles" data-en="Targets">Cibles</a>
+    <a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a>
+    <a href="#certifs" data-fr="Certificats" data-en="Certificates">Certificats</a>
+  </nav>
+  <div class="header__right">
+    <div class="lang-toggle" role="group" aria-label="Langue / Language">
+      <button type="button" id="btnFr" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" id="btnEn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#contact" class="pill" data-fr="Contact ↗" data-en="Contact ↗">Contact ↗</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========= HERO ========= -->
+  <section class="hero">
+    <p class="eyebrow" data-fr="Candidature stage · Sales / Chargé d'affaires stagiaire" data-en="Internship application · Sales / Junior Business Officer">
+      Candidature stage · Sales / Chargé d'affaires stagiaire
+    </p>
+
+    <div class="hero__grid">
+      <div class="hero__title-wrap">
+        <h1 class="hero__title" data-fr-html="Stage<br><em>Sales.</em>" data-en-html="Sales<br><em>Internship.</em>">
+          Stage<br><em>Sales.</em>
+        </h1>
+        <div class="hero__photo">
+          <img src="photo-wongue-davy-cedric.jpg"
+               alt="Portrait de Wongue Davy Cédric"
+               width="220" height="220"
+               onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <div class="hero__intro">
+        <p data-fr="Ingénieur, orienté vers la finance et préparant la certification CAPM du PMI. Je parle couramment français et anglais (TOEFL). Je recherche un stage de chargé d'affaires/sales dans un établissement de services financiers, j'ai une bonne connaissance des produits des marchés financiers et un vrai sens de la relation client."
+           data-en="Engineer, finance-oriented and preparing the PMI CAPM certification. I am fluent in French and English (TOEFL). I am looking for a business officer / sales internship in a financial services institution; I have solid knowledge of financial market products and a strong sense of client relationship.">
+          Ingénieur, orienté vers la finance et préparant la certification CAPM du PMI. Je parle couramment français et anglais (TOEFL). Je recherche un stage de chargé d'affaires/sales dans un établissement de services financiers, j'ai une bonne connaissance des produits des marchés financiers et un vrai sens de la relation client.
+        </p>
+        <a href="#expertise" class="link" data-fr="Voir mon expertise produits" data-en="See my product expertise">Voir mon expertise produits</a>
+
+        <!-- LANGUES EN AVANT -->
+        <div class="langs">
+          <div class="lang">
+            <div class="lang__k" data-fr="Langue" data-en="Language">Langue</div>
+            <div class="lang__v" data-fr="Français (courant)" data-en="French (fluent)">Français (courant)</div>
+          </div>
+          <div class="lang">
+            <div class="lang__k" data-fr="Langue" data-en="Language">Langue</div>
+            <div class="lang__v" data-fr="Anglais (courant, TOEFL)" data-en="English (fluent, TOEFL)">Anglais (courant, TOEFL)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat__num">06<span>mois</span></div>
+        <div class="stat__label" data-fr="Durée de stage visée · disponible immédiatement" data-en="Target internship duration · available immediately">Durée de stage visée · disponible immédiatement</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">04</div>
+        <div class="stat__label" data-fr="Certifications obtenues · CAPM en préparation" data-en="Certifications obtained · CAPM in preparation">Certifications obtenues · CAPM en préparation</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">2<span>langues</span></div>
+        <div class="stat__label" data-fr="Français et anglais courants (TOEFL)" data-en="Fluent French and English (TOEFL)">Français et anglais courants (TOEFL)</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">B2B</div>
+        <div class="stat__label" data-fr="Prospection · PME · family offices" data-en="Prospecting · SMEs · family offices">Prospection · PME · family offices</div>
+      </div>
+    </div>
+
+    <!-- SOMMAIRE -->
+    <nav class="toc" aria-label="Sommaire">
+      <div class="toc__title" data-fr="Sommaire · accès direct" data-en="Contents · quick access">Sommaire · accès direct</div>
+      <ul class="toc__list">
+        <li><a href="#expertise"><span>01</span><span data-fr="Produits financiers" data-en="Financial products">Produits financiers</span></a></li>
+        <li><a href="#stage"><span>02</span><span data-fr="Pourquoi ce stage" data-en="Why this internship">Pourquoi ce stage</span></a></li>
+        <li><a href="#relationnel"><span>03</span><span data-fr="Relationnel" data-en="Interpersonal skills">Relationnel</span></a></li>
+        <li><a href="#cibles"><span>04</span><span data-fr="Ce que je cherche" data-en="What I am looking for">Ce que je cherche</span></a></li>
+        <li><a href="#experience"><span>05</span><span data-fr="Expérience" data-en="Experience">Expérience</span></a></li>
+        <li><a href="#outils"><span>06</span><span data-fr="Outils" data-en="Tools">Outils</span></a></li>
+        <li><a href="#certifs"><span>07</span><span data-fr="Certificats" data-en="Certificates">Certificats</span></a></li>
+        <li><a href="#contact"><span>08</span><span data-fr="Contact" data-en="Contact">Contact</span></a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- ========= EXPERTISE PRODUITS ========= -->
+  <section id="expertise" class="section">
+    <div class="section__head">
+      <h2 class="section__title" data-fr-html="Produits<br>financiers." data-en-html="Financial<br>products.">Produits<br>financiers.</h2>
+      <p class="section__intro" data-fr="Les grandes familles de produits et services financiers que je sais déjà expliquer, comparer et vendre. J'ai appris les fondamentaux de la finance et des produits financiers et je souhaite les développer avec VOUS."
+         data-en="The main families of financial products and services that I can already explain, compare and sell. I have learned the fundamentals of finance and financial products and I want to develop them with YOU.">
+        Les grandes familles de produits et services financiers que je sais déjà expliquer, comparer et vendre. J'ai appris les fondamentaux de la finance et des produits financiers et je souhaite les développer avec VOUS.
+      </p>
+    </div>
+
+    <div class="expertise">
+      <div class="expertise__block rv">
+        <div class="expertise__cat" data-fr="01 · Marché des actions" data-en="01 · Equity market">01 · Marché des actions</div>
+        <h3 class="expertise__title" data-fr="Actions &amp; titres de capital" data-en="Equities &amp; equity securities">Actions &amp; titres de capital</h3>
+        <ul class="expertise__list">
+          <li><b data-fr="Actions cotées" data-en="Listed shares">Actions cotées</b><span data-fr="Achat et vente via une société de bourse agréée ; fonctionnement du marché et frais" data-en="Buying and selling through a licensed brokerage firm; market mechanics and fees">Achat et vente via une société de bourse agréée ; fonctionnement du marché et frais</span></li>
+          <li><b data-fr="Ordres de bourse" data-en="Trading orders">Ordres de bourse</b><span data-fr="Passage, suivi, exécution" data-en="Placement, tracking, execution">Passage, suivi, exécution</span></li>
+          <li><b data-fr="Compartiment actions" data-en="Equity segment">Compartiment actions</b><span data-fr="Liquidité, cotation, valorisation" data-en="Liquidity, listing, valuation">Liquidité, cotation, valorisation</span></li>
+        </ul>
+      </div>
+
+      <div class="expertise__block rv">
+        <div class="expertise__cat" data-fr="02 · Marché obligataire" data-en="02 · Bond market">02 · Marché obligataire</div>
+        <h3 class="expertise__title" data-fr="Obligations &amp; titres de créance" data-en="Bonds &amp; debt securities">Obligations &amp; titres de créance</h3>
+        <ul class="expertise__list">
+          <li><b data-fr="Obligations souveraines" data-en="Sovereign bonds">Obligations souveraines</b><span data-fr="Coupon, maturité, rating, rendement" data-en="Coupon, maturity, rating, yield">Coupon, maturité, rating, rendement</span></li>
+          <li><b data-fr="Obligations régionales" data-en="Regional bonds">Obligations régionales</b><span data-fr="Titres d'institutions de développement" data-en="Development institution securities">Titres d'institutions de développement</span></li>
+          <li><b data-fr="Obligations privées" data-en="Corporate bonds">Obligations privées</b><span data-fr="Émissions d'entreprises : coupons, maturité, rating" data-en="Corporate issues: coupons, maturity, rating">Émissions d'entreprises : coupons, maturité, rating</span></li>
+        </ul>
+      </div>
+
+      <div class="expertise__block rv">
+        <div class="expertise__cat" data-fr="03 · Gestion collective" data-en="03 · Collective investment">03 · Gestion collective</div>
+        <h3 class="expertise__title" data-fr="OPCVM &amp; fonds communs de placement" data-en="UCITS &amp; mutual funds">OPCVM &amp; fonds communs de placement</h3>
+        <ul class="expertise__list">
+          <li><b data-fr="Fonds monétaires, obligataires, actions, mixtes" data-en="Money market, bond, equity, mixed funds">Fonds monétaires, obligataires, actions, mixtes</b><span data-fr="Caractéristiques, horizon, risque, frais" data-en="Features, horizon, risk, fees">Caractéristiques, horizon, risque, frais</span></li>
+          <li><b data-fr="FCP et SICAV" data-en="Mutual funds and SICAVs">FCP et SICAV</b><span data-fr="Fonctionnement, VL, souscription, rachat" data-en="Mechanics, NAV, subscription, redemption">Fonctionnement, VL, souscription, rachat</span></li>
+          <li><b data-fr="Distinction OPCVM / FCP" data-en="UCITS / mutual fund distinction">Distinction OPCVM / FCP</b><span data-fr="Cadre réglementaire et agrément" data-en="Regulatory framework and approval">Cadre réglementaire et agrément</span></li>
+        </ul>
+      </div>
+
+      <div class="expertise__block rv">
+        <div class="expertise__cat" data-fr="04 · Titres publics &amp; services" data-en="04 · Public securities &amp; services">04 · Titres publics &amp; services</div>
+        <h3 class="expertise__title" data-fr="Titres du Trésor &amp; comptes-titres" data-en="Treasury securities &amp; securities accounts">Titres du Trésor &amp; comptes-titres</h3>
+        <ul class="expertise__list">
+          <li><b>OTZ, BTA, OTA</b><span data-fr="Obligations du Trésor à coupon zéro, Bons et Obligations du Trésor Assimilables" data-en="Zero-coupon Treasury bonds, Treasury bills and assimilable Treasury bonds">Obligations du Trésor à coupon zéro, Bons et Obligations du Trésor Assimilables</span></li>
+          <li><b data-fr="Compte-titres / tenue de compte" data-en="Securities account / custody">Compte-titres / tenue de compte</b><span data-fr="Ouverture, KYC, tenue de compte via un PSI teneur de compte" data-en="Opening, KYC, custody via an account-keeping investment services provider">Ouverture, KYC, tenue de compte via un PSI teneur de compte</span></li>
+          <li><b data-fr="Conformité KYC" data-en="KYC compliance">Conformité KYC</b><span data-fr="Rigueur documentaire, vérification d'identité, reporting réglementaire" data-en="Documentary rigor, identity verification, regulatory reporting">Rigueur documentaire, vérification d'identité, reporting réglementaire</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========= POURQUOI UN STAGE ========= -->
+  <section id="stage" class="why-stage">
+    <div class="why-stage__head">
+      <h2 class="why-stage__title rv" data-fr-html="Pourquoi<br>ce stage." data-en-html="Why this<br>internship.">Pourquoi<br>ce stage.</h2>
+      <p class="why-stage__intro rv" data-fr="Un stage n'est pas une fin en soi : c'est un premier terrain pour prouver, apprendre et convertir. Je sais ce que j'apporte dès le premier jour, et ce que je viens chercher." data-en="An internship is not an end in itself: it is a first field to prove, learn and convert. I know what I bring from day one, and what I am here to learn.">
+        Un stage n'est pas une fin en soi : c'est un premier terrain pour prouver, apprendre et convertir. Je sais ce que j'apporte dès le premier jour, et ce que je viens chercher.
+      </p>
+    </div>
+
+    <div class="why-stage__grid">
+      <article class="why-stage__item rv">
+        <div class="why-stage__num" data-fr="01 · Apport immédiat" data-en="01 · Immediate contribution">01 · Apport immédiat</div>
+        <div class="why-stage__stat">J+1</div>
+        <h3 class="why-stage__item-title" data-fr="Opérationnel sur les bases" data-en="Operational on the fundamentals">Opérationnel sur les bases</h3>
+        <p class="why-stage__text" data-fr="Connaissance des familles de produits (actions, obligations, OPCVM, titres publics), reporting KPI, rigueur documentaire. Je peux être productif sur une fiche produit, une préparation de rendez-vous ou un reporting commercial dès la première semaine." data-en="Knowledge of product families (equities, bonds, UCITS, public securities), KPI reporting, documentary rigor. I can be productive on a product sheet, a meeting preparation or a sales report from the first week.">
+          Connaissance des familles de produits (actions, obligations, OPCVM, titres publics), reporting KPI, rigueur documentaire. Je peux être productif sur une fiche produit, une préparation de rendez-vous ou un reporting commercial dès la première semaine.
+        </p>
+      </article>
+
+      <article class="why-stage__item rv">
+        <div class="why-stage__num" data-fr="02 · Ce que je viens apprendre" data-en="02 · What I am here to learn">02 · Ce que je viens apprendre</div>
+        <div class="why-stage__stat">06<span style="font-size:.5em">mois</span></div>
+        <h3 class="why-stage__item-title" data-fr="La vente sur le terrain" data-en="Field sales">La vente sur le terrain</h3>
+        <p class="why-stage__text" data-fr="Je viens apprendre le cycle de vente réel : prospection, découverte, proposition, objection, closing, suivi. Je viens aussi apprendre les outils internes et les produits spécifiques à chaque maison, que je ne prétends pas maîtriser à l'avance." data-en="I am here to learn the real sales cycle: prospecting, discovery, proposal, objection handling, closing, follow-up. I am also here to learn internal tools and firm-specific products, which I do not claim to master in advance.">
+          Je viens apprendre le cycle de vente réel : prospection, découverte, proposition, objection, closing, suivi. Je viens aussi apprendre les outils internes et les produits spécifiques à chaque maison, que je ne prétends pas maîtriser à l'avance.
+        </p>
+      </article>
+
+      <article class="why-stage__item rv">
+        <div class="why-stage__num" data-fr="03 · Objectif" data-en="03 · Objective">03 · Objectif</div>
+        <div class="why-stage__stat">100<span style="font-size:.5em">%</span></div>
+        <h3 class="why-stage__item-title" data-fr="Conversion en CDI" data-en="Conversion to permanent contract">Conversion en CDI</h3>
+        <p class="why-stage__text" data-fr="Je ne viens pas « faire un stage ». Je viens prouver ma valeur sur 6 mois et convertir en poste de chargé d'affaires junior. Mon parcours atypique (ingénieur vers la finance) en fait un candidat qui sait apprendre vite et tenir dans la durée." data-en="I am not here to “do an internship”. I am here to prove my value over 6 months and convert into a junior business officer position. My atypical background (engineer to finance) makes me a candidate who learns fast and lasts.">
+          Je ne viens pas « faire un stage ». Je viens prouver ma valeur sur 6 mois et convertir en poste de chargé d'affaires junior. Mon parcours atypique (ingénieur vers la finance) en fait un candidat qui sait apprendre vite et tenir dans la durée.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= RELATIONNEL ========= -->
+  <section id="relationnel" class="relational">
+    <div class="relational__head">
+      <h2 class="relational__title rv" data-fr-html="Le relationnel,<br>au centre." data-en-html="Relationships,<br>at the core.">Le relationnel,<br>au centre.</h2>
+      <p class="relational__intro rv" data-fr="Un chargé d'affaires ne vend pas un produit : il installe une relation de confiance. Ma connaissance produits sert cette relation, elle ne la remplace pas. Je travaille couramment en français et en anglais." data-en="A business officer does not sell a product: they build a relationship of trust. My product knowledge serves that relationship, it does not replace it. I work fluently in French and English.">
+        Un chargé d'affaires ne vend pas un produit : il installe une relation de confiance. Ma connaissance produits sert cette relation, elle ne la remplace pas. Je travaille couramment en français et en anglais.
+      </p>
+    </div>
+
+    <div class="relational__grid">
+      <article class="rel rv">
+        <div class="rel__num">01</div>
+        <h3 class="rel__title" data-fr="Écoute active &amp; découverte du besoin" data-en="Active listening &amp; needs discovery">Écoute active &amp; découverte du besoin</h3>
+        <p class="rel__text" data-fr="Sur le terrain industriel, j'ai appris à écouter avant de proposer : comprendre le problème réel avant de sortir une solution. C'est la même posture face à un client, comprendre sa situation (trésorerie, horizon, tolérance au risque) avant de parler produit." data-en="In the industrial field, I learned to listen before proposing: understand the real problem before offering a solution. The same posture applies to a client, understand their situation (cash flow, horizon, risk tolerance) before discussing products.">
+          Sur le terrain industriel, j'ai appris à écouter avant de proposer : comprendre le problème réel avant de sortir une solution. C'est la même posture face à un client, comprendre sa situation (trésorerie, horizon, tolérance au risque) avant de parler produit.
+        </p>
+        <div class="rel__tag" data-fr="Écoute · découverte · diagnostic" data-en="Listening · discovery · diagnosis">Écoute · découverte · diagnostic</div>
+      </article>
+
+      <article class="rel rv">
+        <div class="rel__num">02</div>
+        <h3 class="rel__title" data-fr="Négociation &amp; parties prenantes" data-en="Negotiation &amp; stakeholders">Négociation &amp; parties prenantes</h3>
+        <p class="rel__text" data-fr="Convaincre un industriel d'adopter une procédure, négocier un compromis stabilité-coût, aligner plusieurs services : j'ai pratiqué la négociation là où le rapport de force n'était pas en ma faveur. C'est ce qui construit un commercial crédible." data-en="Convincing an industrial player to adopt a procedure, negotiating a stability-cost trade-off, aligning several departments: I have practiced negotiation where the balance of power was not in my favor. That is what builds a credible salesperson.">
+          Convaincre un industriel d'adopter une procédure, négocier un compromis stabilité-coût, aligner plusieurs services : j'ai pratiqué la négociation là où le rapport de force n'était pas en ma faveur. C'est ce qui construit un commercial crédible.
+        </p>
+        <div class="rel__tag" data-fr="Négociation · compromis · alignement" data-en="Negotiation · compromise · alignment">Négociation · compromis · alignement</div>
+      </article>
+
+      <article class="rel rv">
+        <div class="rel__num">03</div>
+        <h3 class="rel__title" data-fr="Pédagogie &amp; restitution client" data-en="Teaching &amp; client communication">Pédagogie &amp; restitution client</h3>
+        <p class="rel__text" data-fr="J'ai accompagné 4 micro-industries en documentation et standards : expliquer sans jargon, faire comprendre, faire adhérer. Un client n'achète pas un produit financier qu'il ne comprend pas. Ma force, c'est de le rendre compréhensible sans le simplifier à l'excès." data-en="I supported 4 micro-industries in documentation and standards: explain without jargon, make people understand, get them on board. A client does not buy a financial product they do not understand. My strength is making it understandable without oversimplifying.">
+          J'ai accompagné 4 micro-industries en documentation et standards : expliquer sans jargon, faire comprendre, faire adhérer. Un client n'achète pas un produit financier qu'il ne comprend pas. Ma force, c'est de le rendre compréhensible sans le simplifier à l'excès.
+        </p>
+        <div class="rel__tag" data-fr="Vulgarisation · adhésion · confiance" data-en="Simplifying · buy-in · trust">Vulgarisation · adhésion · confiance</div>
+      </article>
+
+      <article class="rel rv">
+        <div class="rel__num">04</div>
+        <h3 class="rel__title" data-fr="Rigueur documentaire &amp; conformité" data-en="Documentary rigor &amp; compliance">Rigueur documentaire &amp; conformité</h3>
+        <p class="rel__text" data-fr="Contrôles ANOR, audits QHSE, suivi de procédures : j'ai l'habitude des dossiers qu'on ne peut pas se permettre de bâcler. En établissement financier, c'est exactement ce qu'exige le KYC, l'ouverture de compte et le reporting réglementaire." data-en="ANOR controls, QHSE audits, procedure tracking: I am used to files that cannot be rushed. In a financial institution, that is exactly what KYC, account opening and regulatory reporting require.">
+          Contrôles ANOR, audits QHSE, suivi de procédures : j'ai l'habitude des dossiers qu'on ne peut pas se permettre de bâcler. En établissement financier, c'est exactement ce qu'exige le KYC, l'ouverture de compte et le reporting réglementaire.
+        </p>
+        <div class="rel__tag" data-fr="KYC · conformité · reporting" data-en="KYC · compliance · reporting">KYC · conformité · reporting</div>
+      </article>
+
+      <article class="rel rv">
+        <div class="rel__num">05</div>
+        <h3 class="rel__title" data-fr="Ténacité &amp; suivi dans la durée" data-en="Tenacity &amp; long-term follow-up">Ténacité &amp; suivi dans la durée</h3>
+        <p class="rel__text" data-fr="Un dossier industriel ne se règle pas en une réunion. Un client non plus. J'ai appris à relancer sans harceler, à suivre sans oublier, à tenir un portefeuille de dossiers en parallèle. La vente, c'est 80 % de suivi." data-en="An industrial file is not settled in one meeting. Neither is a client. I learned to follow up without harassing, to track without forgetting, to manage a portfolio of files in parallel. Sales is 80% follow-up.">
+          Un dossier industriel ne se règle pas en une réunion. Un client non plus. J'ai appris à relancer sans harceler, à suivre sans oublier, à tenir un portefeuille de dossiers en parallèle. La vente, c'est 80 % de suivi.
+        </p>
+        <div class="rel__tag" data-fr="Suivi · relance · portefeuille" data-en="Follow-up · reminders · portfolio">Suivi · relance · portefeuille</div>
+      </article>
+
+      <article class="rel rv">
+        <div class="rel__num">06</div>
+        <h3 class="rel__title" data-fr="Discrétion &amp; intégrité" data-en="Discretion &amp; integrity">Discrétion &amp; intégrité</h3>
+        <p class="rel__text" data-fr="Manipuler des données financières, c'est manipuler la confiance de quelqu'un. Mon parcours (ingénieur, audit interne, conformité) m'a formé à la discrétion et à l'intégrité. Je ne prendrai jamais un raccourci commercial au détriment de la conformité." data-en="Handling financial data means handling someone's trust. My background (engineer, internal audit, compliance) has trained me in discretion and integrity. I will never take a commercial shortcut at the expense of compliance.">
+          Manipuler des données financières, c'est manipuler la confiance de quelqu'un. Mon parcours (ingénieur, audit interne, conformité) m'a formé à la discrétion et à l'intégrité. Je ne prendrai jamais un raccourci commercial au détriment de la conformité.
+        </p>
+        <div class="rel__tag" data-fr="Éthique · discrétion · intégrité" data-en="Ethics · discretion · integrity">Éthique · discrétion · intégrité</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= CE QUE JE CHERCHE ========= -->
+  <section id="cibles" class="section">
+    <div class="section__head">
+      <h2 class="section__title" data-fr-html="Ce que<br>je cherche." data-en-html="What I am<br>looking for.">Ce que<br>je cherche.</h2>
+      <p class="section__intro" data-fr="Un stage de 06 mois au sein de votre établissement de services financiers, à Douala." data-en="A 6-month internship within your financial services institution, in Douala.">
+        Un stage de 06 mois au sein de votre établissement de services financiers, à Douala.
+      </p>
+    </div>
+
+    <div class="search">
+      <article class="search__block rv">
+        <div class="search__cat" data-fr="Cible 01 · Gestion d'actifs" data-en="Target 01 · Asset management">Cible 01 · Gestion d'actifs</div>
+        <h3 class="search__title" data-fr="Société de gestion d'actifs" data-en="Asset management company">Société de gestion d'actifs</h3>
+        <p class="search__poste" data-fr="Stage 06 mois · Chargé d'affaires junior · Client Relationship" data-en="6-month internship · Junior business officer · Client relationship">Stage 06 mois · Chargé d'affaires junior · Client Relationship</p>
+        <ul class="search__list">
+          <li data-fr="Distribution d'OPCVM et de FCP" data-en="Distribution of UCITS and mutual funds">Distribution d'OPCVM et de FCP</li>
+          <li data-fr="Suivi de portefeuille client" data-en="Client portfolio monitoring">Suivi de portefeuille client</li>
+          <li data-fr="Reporting commercial et KPI" data-en="Sales reporting and KPIs">Reporting commercial et KPI</li>
+          <li data-fr="Prospection B2B sur Douala" data-en="B2B prospecting in Douala">Prospection B2B sur Douala</li>
+        </ul>
+        <p class="search__why" data-fr-html="<b>Ce que j'apporte dès J+1 :</b> connaissance des familles de fonds et de leur risque, capacité à expliquer un produit, reporting commercial fiable, posture d'écoute et de suivi." data-en-html="<b>What I bring from day one:</b> knowledge of fund families and their risk, ability to explain a product, reliable sales reporting, listening and follow-up mindset.">
+          <b>Ce que j'apporte dès J+1 :</b> connaissance des familles de fonds et de leur risque, capacité à expliquer un produit, reporting commercial fiable, posture d'écoute et de suivi.
+        </p>
+      </article>
+
+      <article class="search__block search__block--accent rv">
+        <div class="search__cat" data-fr="Cible 02 · Société de bourse" data-en="Target 02 · Brokerage firm">Cible 02 · Société de bourse</div>
+        <h3 class="search__title" data-fr="Société de bourse" data-en="Brokerage firm">Société de bourse</h3>
+        <p class="search__poste" data-fr="Stage 06 mois · Chargé de clientèle junior · Middle-office" data-en="6-month internship · Junior client officer · Middle office">Stage 06 mois · Chargé de clientèle junior · Middle-office</p>
+        <ul class="search__list">
+          <li data-fr="Ouverture de comptes et KYC" data-en="Account opening and KYC">Ouverture de comptes et KYC</li>
+          <li data-fr="Passage et suivi d'ordres" data-en="Order placement and tracking">Passage et suivi d'ordres</li>
+          <li data-fr="Suivi client et conformité" data-en="Client monitoring and compliance">Suivi client et conformité</li>
+          <li data-fr="Reporting réglementaire" data-en="Regulatory reporting">Reporting réglementaire</li>
+        </ul>
+        <p class="search__why" data-fr-html="<b>Ce que j'apporte dès J+1 :</b> connaissance des actions, obligations et titres du Trésor, rigueur documentaire et conformité, capacité d'apprentissage rapide des outils internes." data-en-html="<b>What I bring from day one:</b> knowledge of equities, bonds and Treasury securities, documentary rigor and compliance, ability to learn internal tools quickly.">
+          <b>Ce que j'apporte dès J+1 :</b> connaissance des actions, obligations et titres du Trésor, rigueur documentaire et conformité, capacité d'apprentissage rapide des outils internes.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========= EXPERIENCE ========= -->
+  <section id="experience" class="section section--center">
+    <h2 class="section__title section__title--xl rv" data-fr-html="Expérience<br>transférable." data-en-html="Transferable<br>experience.">Expérience<br>transférable.</h2>
+    <p class="section__intro section__intro--center rv" data-fr="Cinq environnements industriels, entre 2021 et 2025, à Douala. Reformulés côté Sales : analyse, relation client, reporting, rigueur." data-en="Five industrial environments, between 2021 and 2025, in Douala. Reframed for sales: analysis, client relations, reporting, rigor.">
+      Cinq environnements industriels, entre 2021 et 2025, à Douala. Reformulés côté Sales : analyse, relation client, reporting, rigueur.
+    </p>
+
+    <ul class="xp">
+      <li class="xp__row rv">
+        <span class="xp__mark">✦</span>
+        <span class="xp__company">Michele's Industries</span>
+        <span class="xp__role" data-fr="Analyse chiffrée · standardisation · reporting" data-en="Data analysis · standardization · reporting">Analyse chiffrée · standardisation · reporting</span>
+        <span class="xp__date">2024 · 2025</span>
+      </li>
+      <li class="xp__row rv">
+        <span class="xp__mark">✦</span>
+        <span class="xp__company">AVRAM APTUS</span>
+        <span class="xp__role" data-fr="Relation client · accompagnement de 4 structures" data-en="Client relations · support for 4 organizations">Relation client · accompagnement de 4 structures</span>
+        <span class="xp__date">2023 · 2024</span>
+      </li>
+      <li class="xp__row rv">
+        <span class="xp__mark">✦</span>
+        <span class="xp__company">FBI · Food &amp; Beverages Industries</span>
+        <span class="xp__role" data-fr="Analyse de données · construction d'indicateurs" data-en="Data analysis · building indicators">Analyse de données · construction d'indicateurs</span>
+        <span class="xp__date">2023</span>
+      </li>
+      <li class="xp__row rv">
+        <span class="xp__mark">✦</span>
+        <span class="xp__company">OK Foods</span>
+        <span class="xp__role" data-fr="Conformité documentaire · sens du détail" data-en="Documentary compliance · attention to detail">Conformité documentaire · sens du détail</span>
+        <span class="xp__date">2022</span>
+      </li>
+      <li class="xp__row rv">
+        <span class="xp__mark">✦</span>
+        <span class="xp__company">SIC Cacao</span>
+        <span class="xp__role" data-fr="Résolution de problème · méthode (Ishikawa)" data-en="Problem solving · method (Ishikawa)">Résolution de problème · méthode (Ishikawa)</span>
+        <span class="xp__date">2021 · 2022</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ========= OUTILS ========= -->
+  <section id="outils" class="section">
+    <div class="section__head">
+      <h2 class="section__title" data-fr-html="Outils<br>&amp; compétences." data-en-html="Tools<br>&amp; skills.">Outils<br>&amp; compétences.</h2>
+      <p class="section__intro" data-fr="Ce que je maîtrise déjà et ce que j'apprendrai en stage. Pas de survendu, un stage sert précisément à progresser sur le second." data-en="What I already master and what I will learn during the internship. No overselling, an internship is precisely meant to progress on the latter.">
+        Ce que je maîtrise déjà et ce que j'apprendrai en stage. Pas de survendu, un stage sert précisément à progresser sur le second.
+      </p>
+    </div>
+
+    <ul class="stack">
+      <li class="rv"><span class="stack__k" data-fr="Actions" data-en="Equities">Actions</span><span class="stack__v" data-fr-html="<b>Solide</b> : fonctionnement, ordres, frais" data-en-html="<b>Solid</b>: mechanics, orders, fees"><b>Solide</b> : fonctionnement, ordres, frais</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Obligations" data-en="Bonds">Obligations</span><span class="stack__v" data-fr-html="<b>Solide</b> : souveraines, régionales, privées" data-en-html="<b>Solid</b>: sovereign, regional, corporate"><b>Solide</b> : souveraines, régionales, privées</span></li>
+      <li class="rv"><span class="stack__k">OPCVM / FCP</span><span class="stack__v" data-fr-html="<b>Solide</b> : monétaires, obligataires, actions, mixtes" data-en-html="<b>Solid</b>: money market, bond, equity, mixed"><b>Solide</b> : monétaires, obligataires, actions, mixtes</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Titres du Trésor" data-en="Treasury securities">Titres du Trésor</span><span class="stack__v" data-fr-html="<b>Solide</b> : OTZ, BTA, OTA" data-en-html="<b>Solid</b>: OTZ, BTA, OTA"><b>Solide</b> : OTZ, BTA, OTA</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Conformité / KYC" data-en="Compliance / KYC">Conformité / KYC</span><span class="stack__v" data-fr-html="<b>Opérationnel</b> (audit interne, rigueur procédés)" data-en-html="<b>Operational</b> (internal audit, process rigor)"><b>Opérationnel</b> (audit interne, rigueur procédés)</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Reporting commercial" data-en="Sales reporting">Reporting commercial</span><span class="stack__v" data-fr-html="<b>Opérationnel</b> (KPI, synthèses, suivi)" data-en-html="<b>Operational</b> (KPIs, summaries, tracking)"><b>Opérationnel</b> (KPI, synthèses, suivi)</span></li>
+      <li class="rv"><span class="stack__k">CAPM (PMI)</span><span class="stack__v" data-fr-html="<b>En préparation</b> (gestion de projet, fondamentaux)" data-en-html="<b>In preparation</b> (project management, fundamentals)"><b>En préparation</b> (gestion de projet, fondamentaux)</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Langues" data-en="Languages">Langues</span><span class="stack__v" data-fr-html="<b>Français et anglais courants</b> (TOEFL)" data-en-html="<b>Fluent French and English</b> (TOEFL)"><b>Français et anglais courants</b> (TOEFL)</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Vente terrain" data-en="Field sales">Vente terrain</span><span class="stack__v" data-fr="À apprendre en stage, c'est l'objet même du stage" data-en="To learn during the internship, that is the very purpose of the internship">À apprendre en stage, c'est l'objet même du stage</span></li>
+      <li class="rv"><span class="stack__k" data-fr="Produits spécifiques maison" data-en="Firm-specific products">Produits spécifiques maison</span><span class="stack__v" data-fr="À apprendre en stage (formation interne)" data-en="To learn during the internship (internal training)">À apprendre en stage (formation interne)</span></li>
+    </ul>
+  </section>
+
+  <!-- ========= CERTIFICATS ========= -->
+  <section id="certifs" class="section section--center">
+    <h2 class="section__title section__title--xl rv" data-fr-html="Certificats<br>&amp; attestations." data-en-html="Certificates<br>&amp; attestations.">Certificats<br>&amp; attestations.</h2>
+    <p class="section__intro section__intro--center rv" data-fr="Documents vérifiables. Cliquez pour agrandir." data-en="Verifiable documents. Click to enlarge.">
+      Documents vérifiables. Cliquez pour agrandir.
+    </p>
+
+    <div class="cert-grid" id="certGrid" aria-live="polite"></div>
+  </section>
+
+  <!-- ========= CONTACT ========= -->
+  <section id="contact" class="section contact">
+    <div class="contact__grid">
+      <h2 class="section__title section__title--xl rv" data-fr-html="Parlons<br>du stage." data-en-html="Let's talk<br>about the internship.">Parlons<br>du stage.</h2>
+      <div class="contact__links rv">
+        <a href="tel:+237698385430" class="field">
+          <span data-fr="Téléphone" data-en="Phone">Téléphone</span>
+          <span class="field__v">+237 698 385 430</span>
+        </a>
+        <a href="mailto:davycedricw@outlook.com" class="field">
+          <span data-fr="Email" data-en="Email">Email</span>
+          <span class="field__v">davycedricw@outlook.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+  <div>© 2026 Wongue Davy Cédric</div>
+  <nav aria-label="Footer">
+    <a href="#expertise" data-fr="Expertise" data-en="Expertise">Expertise</a>
+    <a href="#stage" data-fr="Stage" data-en="Internship">Stage</a>
+    <a href="#relationnel" data-fr="Relationnel" data-en="Interpersonal">Relationnel</a>
+    <a href="#certifs" data-fr="Certificats" data-en="Certificates">Certificats</a>
+  </nav>
+  <div data-fr="Douala · Cameroun" data-en="Douala · Cameroon">Douala · Cameroun</div>
+</footer>
+
+<!-- ========= LIGHTBOX ========= -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Aperçu du document">
+  <button class="lb__close" id="lbClose" type="button" aria-label="Fermer">×</button>
+  <div class="lb__content" id="lbContent"></div>
+  <div class="lb__cap" id="lbCap"></div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- REVEAL ---------- */
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('on');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.14 });
+
+  /* ---------- LANGUE FR / EN ---------- */
+  var lang = (function () {
+    try { return localStorage.getItem('lang') || 'fr'; }
+    catch (e) { return 'fr'; }
+  })();
+
+  function applyLang(l) {
+    lang = l;
+    try { localStorage.setItem('lang', l); } catch (e) {}
+    document.documentElement.lang = l;
+
+    document.querySelectorAll('[data-fr]').forEach(function (el) {
+      el.textContent = el.getAttribute('data-' + l) || el.textContent;
+    });
+    document.querySelectorAll('[data-fr-html]').forEach(function (el) {
+      el.innerHTML = el.getAttribute('data-' + l + '-html') || el.innerHTML;
+    });
+
+    var btnFr = document.getElementById('btnFr');
+    var btnEn = document.getElementById('btnEn');
+    if (btnFr && btnEn) {
+      btnFr.setAttribute('aria-pressed', l === 'fr' ? 'true' : 'false');
+      btnEn.setAttribute('aria-pressed', l === 'en' ? 'true' : 'false');
+    }
+  }
+
+  var btnFr = document.getElementById('btnFr');
+  var btnEn = document.getElementById('btnEn');
+  if (btnFr) btnFr.addEventListener('click', function () { applyLang('fr'); });
+  if (btnEn) btnEn.addEventListener('click', function () { applyLang('en'); });
+
+  /* ---------- CERTIFICATS (sans em-dash) ---------- */
+  var DOCUMENTS = [
+    {
+      name_fr: "Diplôme d'ingénieur, Université Catholique Saint-Jérôme de Douala",
+      name_en: "Engineering degree, Catholic University Saint-Jérôme of Douala",
+      type: 'image/jpeg',
+      data: 'diplome-ingenieur-wongue-davy-cedric.jpg'
+    },
+    {
+      name_fr: 'Fundamentals of Finance, University of Pennsylvania',
+      name_en: 'Fundamentals of Finance, University of Pennsylvania',
+      type: 'image/jpeg',
+      data: 'certificat-penn-finance.jpg'
+    },
+    {
+      name_fr: 'Bloomberg Market Concepts (BMC), Bloomberg',
+      name_en: 'Bloomberg Market Concepts (BMC), Bloomberg',
+      type: 'image/jpeg',
+      data: 'certificat-bloomberg-bmc.jpg'
+    },
+    {
+      name_fr: 'TOEFL (Test of English as a Foreign Language)',
+      name_en: 'TOEFL (Test of English as a Foreign Language)',
+      type: 'image/jpeg',
+      data: 'certificat-toefl.jpg'
+    },
+    {
+      name_fr: 'CAPM (Certified Associate in Project Management, PMI)',
+      name_en: 'CAPM (Certified Associate in Project Management, PMI)',
+      type: 'prep',
+      data: ''
+    }
+  ];
+
+  var grid      = document.getElementById('certGrid');
+  var lb        = document.getElementById('lightbox');
+  var lbContent = document.getElementById('lbContent');
+  var lbCap     = document.getElementById('lbCap');
+  var lbClose   = document.getElementById('lbClose');
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
+    });
+  }
+  function soonBox() {
+    return '<div class="soon">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>' +
+      '<b data-fr="Aperçu en cours de mise à jour" data-en="Preview being updated">Aperçu en cours de mise à jour</b>' +
+      '<small data-fr="Bientôt disponible" data-en="Coming soon">Bientôt disponible</small>' +
+      '</div>';
+  }
+  function prepBox() {
+    return '<div class="prep">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>' +
+      '<b data-fr="Certification en préparation" data-en="Certification in preparation">Certification en préparation</b>' +
+      '<small>CAPM · PMI</small>' +
+      '</div>';
+  }
+
+  function docName(c) {
+    return lang === 'en' ? c.name_en : c.name_fr;
+  }
+
+  function openLightbox(idx) {
+    var c = DOCUMENTS[idx];
+    if (c.type === 'prep') return;
+
+    lbContent.innerHTML = '';
+
+    if (c.type.indexOf('pdf') === 0) {
+      var iframe = document.createElement('iframe');
+      iframe.src = c.data;
+      iframe.title = docName(c);
+      lbContent.appendChild(iframe);
+    } else {
+      var img = document.createElement('img');
+      img.src = c.data;
+      img.alt = docName(c);
+      img.onerror = function () {
+        lbContent.innerHTML = '<div style="color:#fff;text-align:center;padding:32px;max-width:420px;">' +
+          '<b style="display:block;font-size:18px;margin-bottom:8px;">' +
+          (lang === 'en' ? 'Preview being updated' : 'Aperçu en cours de mise à jour') +
+          '</b>' +
+          '<p style="font-size:13px;opacity:.7;">' +
+          (lang === 'en' ? 'This document will be available soon.' : 'Ce document sera prochainement disponible.') +
+          '</p></div>';
+      };
+      lbContent.appendChild(img);
+    }
+
+    lbCap.textContent = docName(c);
+    lb.classList.add('open');
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lb.classList.remove('open');
+    lbContent.innerHTML = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+  });
+
+  function renderCertificates() {
+    grid.innerHTML = '';
+
+    DOCUMENTS.forEach(function (c, idx) {
+      var card = document.createElement('article');
+      card.className = 'cert-card rv' + (c.type === 'prep' ? ' cert-card--prep' : '');
+      card.tabIndex = 0;
+      card.setAttribute('role', 'button');
+      card.setAttribute('aria-label', docName(c));
+      card.addEventListener('click', function () { openLightbox(idx); });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(idx);
+        }
+      });
+
+      var thumb = document.createElement('div');
+      thumb.className = 'cert-thumb';
+
+      if (c.type === 'prep') {
+        thumb.innerHTML = prepBox();
+      } else if (c.type.indexOf('pdf') === 0) {
+        thumb.innerHTML = soonBox();
+      } else {
+        var img = document.createElement('img');
+        img.src = c.data;
+        img.alt = docName(c);
+        img.loading = 'lazy';
+        img.onerror = function () { thumb.innerHTML = soonBox(); };
+        thumb.appendChild(img);
+      }
+
+      var info = document.createElement('div');
+      info.className = 'cert-info';
+      info.innerHTML = '<div class="t">' + escapeHtml(docName(c)) + '</div>';
+
+      card.appendChild(thumb);
+      card.appendChild(info);
+      grid.appendChild(card);
+      io.observe(card);
+    });
+  }
+
+  /* Initialisation */
+  applyLang(lang);
+  renderCertificates();
+
+  document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+
+  /* ---------- Navigation interne : compense la hauteur du header ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var href = a.getAttribute('href');
+      if (!href || href === '#') return;
+      var target = document.querySelector(href);
+      if (!target) return;
+      e.preventDefault();
+      var offset = document.querySelector('.header').offsetHeight + 16;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
